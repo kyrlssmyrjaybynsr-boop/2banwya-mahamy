@@ -1,0 +1,10 @@
+{
+  "name": "جدول مذاكرة تانية بكالوريا",
+  "short_name": "مذاكرة 2 بكلوريا",
+  "description": "منظم مذاكرة لمسار الهندسة وعلوم الحاسب",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#ff8c42",
+  "orientation": "portrait"
+}
