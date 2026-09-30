@@ -3,62 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#ff8c42">
-    <title>جدول مذاكرة للصف الثاني بكلوريا</title>
+
+    <title>منصات بكالوريا</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.json">
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>جدول مذاكرة للصف الثاني بكلوريا</h1>
-        <h2>مسار الهندسه وعلوم الحاسب</h2>
+    <!-- رأس الصفحة -->
+    <header class="hero">
 
-        <div class="tools">
-            <div class="tool-box">
-                <h3>⏱️ ساعة ايقاف</h3>
-                <div id="stopwatch">00:00:00</div>
-                <button id="swStart">ابدأ</button>
-                <button id="swReset">تصفير</button>
+        <div class="hero-content">
+
+            <div class="badge">
+                📚 منصة الطالب
             </div>
 
-            <div class="tool-box">
-                <h3>⏰ عداد قابل للتعديل</h3>
-                <input type="number" id="timerInput" value="60" min="1"> دقيقة
-                <div id="timer">60:00</div>
-                <button id="timerStart">ابدأ</button>
-                <button id="timerReset">اعادة</button>
-            </div>
+            <h1>
+                منصات بكالوريا
+            </h1>
+
+            <p>
+                الصف الثاني بكالوريا — مسار الهندسة وعلوم الحاسب
+            </p>
+
+            <a
+                class="youtube-btn"
+                href="https://www.youtube.com/"
+                target="_blank"
+            >
+                ▶️ يوتيوب
+            </a>
+
         </div>
 
-        <div class="calendar-box">
-            <h3>📅 التقويم والملاحظات</h3>
-            <input type="date" id="datePicker">
-            <textarea id="notes" rows="4" placeholder="اكتب ملاحظات اليوم هنا..."></textarea>
-            <button id="saveNoteBtn">حفظ الملاحظة</button>
-        </div>
+    </header>
 
-        <div class="week-table-box">
-            <h3>📖 جدول الاسبوع بالفترات</h3>
-            <input type="text" id="weekName" placeholder="اسم الاسبوع: مثال الاسبوع الاول">
-            <table id="weekTable">
-                <thead>
-                    <tr>
-                        <th>اليوم</th>
-                        <th>الصباحية<br>7ص - 12ظ</th>
-                        <th>العصرية<br>2ظ - 6م</th>
-                        <th>المسائية<br>8م - 11م</th>
-                    </tr>
-                </thead>
-                <tbody id="weekBody"></tbody>
-            </table>
-        </div>
 
-        <h3>📚 المواد</h3>
-        <div id="subjectsList"></div>
-    </div>
+    <!-- المحتوى -->
+    <main class="container">
 
-    <audio id="alarmSound" src="https://www.soundjay.com/buttons/sounds/button-16.mp3"></audio>
-    <script src="script.js"></script> 
+        <section class="intro">
+
+            <h2>
+                📚 منصات الدروس
+            </h2>
+
+            <p>
+                جميع المنصات التي تستخدمها للدروس في مكان واحد
+            </p>
+
+            <!-- البحث -->
+            <input
+                id="searchInput"
+                type="search"
+                placeholder="🔎 ابحث عن مادة أو منصة..."
+            >
+
+        </section>
+
+
+        <!-- المنصات -->
+        <section id="platforms" class="platforms">
+
+
+            <!-- عربي -->
+            <article
+                class="card"
+                data-search="عربي بسطتهالك"
+            >
+
+                <div class="icon">
+                    ع
+                </div>
+
+                <div class="card-body">
+
+                    <span class="subject">
+                        المادة
+                    </span>
+
+                    <h3>
+                        عربي
+                    </h3>
+
+                    <p>
+                        منصة بسطتهالك
+                    </p>
+
+                    <a
+                        href="https://bassthalk.com/"
+                        target="_blank"
+                    >
+                        دخول إلى المنصة ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- تاريخ -->
+            <article
+                class="card"
+                data-search="تاريخ احمد عادل"
+            >
+
+                <div class="icon">
+                    ت
+                </div>
+
+                <div class="card-body">
+
+                    <span class="subject">
+                        المادة
+                    </span>
+
+                    <h3>
+                        تاريخ
+                    </h3>
+
+                    <p>
+                        منصة أحمد عادل
+                    </p>
+
+                    <a
+                        href="https://mr-ahmed-adel.com/userprofile/home"
+                        target="_blank"
+                    >
+                        دخول إلى المنصة ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- إنجليزي -->
+            <article
+                class="card"
+                data-search="انجليزي انجلشاوي"
+            >
+
+                <div class="icon">
+                    E
+                </div>
+
+                <div class="card-body">
+
+                    <span class="subject">
+                        المادة
+                    </span>
+
+                    <h3>
+                        إنجليزي
+                    </h3>
+
+                    <p>
+                        منصة انجلشاوي
+                    </p>
+
+                    <a
+                        href="https://www.mrenglishawy.com/ar/plans"
+                        target="_blank"
+                    >
+                        دخول إلى المنصة ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- برمجة -->
+            <article
+                class="card"
+                data-search="برمجة code-up"
+            >
+
+                <div class="icon">
+                    &lt;/&gt;
+                </div>
+
+                <div class="card-body">
+
+                    <span class="subject">
+                        المادة
+                    </span>
+
+                    <h3>
+                        برمجة
+                    </h3>
+
+                    <p>
+                        منصة Code-Up
+                    </p>
+
+                    <a
+                        href="https://code-up.tech/"
+                        target="_blank"
+                    >
+                        دخول إلى المنصة ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+
+        <p
+            id="noResults"
+            class="no-results"
+        >
+            لا توجد نتائج مطابقة.
+        </p>
+
+    </main>
+
+
+    <!-- الفوتر -->
+    <footer>
+
+        <p>
+            © 2026 — منصات بكالوريا
+        </p>
+
+        <p>
+            مسار الهندسة وعلوم الحاسب
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
